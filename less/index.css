@@ -122,3 +122,79 @@ html {
 #footer .download p:nth-child(1) span {
   color: #9d9d9d;
 }
+.search {
+  display: flex;
+  padding: .1rem;
+  background-color: #fff;
+}
+.search input {
+  border: none;
+  width: 80%;
+  height: .35rem;
+  margin: 0;
+  border-radius: .5rem;
+  background-color: #f1f1f1;
+  font-size: .13rem;
+}
+.search span {
+  flex: 1;
+  margin-left: .05rem;
+  border-radius: .5rem;
+  background-color: #ff841d;
+  color: #fff;
+  text-align: center;
+  line-height: .35rem;
+  font-size: .13rem;
+}
+#main {
+  background-color: #f1f1f1;
+}
+#main .nav {
+  margin-top: .1rem;
+  margin-bottom: .07rem;
+}
+#main .nav ul {
+  padding-top: .1rem;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#main .nav ul li {
+  width: 25%;
+}
+#main .nav ul li:nth-child(9),
+#main .nav ul li:nth-child(10),
+#main .nav ul li:nth-child(11),
+#main .nav ul li:nth-child(12) {
+  display: none;
+}
+#main .nav ul li.hide {
+  display: block;
+}
+#main .nav ul li a {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#main .nav ul li a img {
+  width: 50%;
+}
+.recommend {
+  background-color: #ff9711;
+  display: flex;
+  line-height: .35rem;
+  justify-content: space-between;
+}
+.recommend p {
+  margin: 0;
+  font-size: .14rem;
+  color: #fff;
+  padding-left: .1rem;
+}
+.recommend span {
+  line-height: .35rem;
+  color: #fff;
+  padding-right: .1rem;
+  font-size: .14rem;
+}
