@@ -22,8 +22,8 @@ $(function () {
                 url: 'http://localhost:9090/api/getgsshop',
                 success: function (obj) {
                     var title = $(".nav-title .shop").find('span').html();
-                    console.log(title);
-                    console.log(obj);
+                    // console.log(title);
+                    // console.log(obj);
                     obj['title'] = title;
                     var html = template('navshopTpl', obj);
                     $('.nav-content ul').html(html);
@@ -41,7 +41,7 @@ $(function () {
                         obj.result[i]['erea'] = obj.result[i].areaName.substr(0,2);
                         
                     }
-                    console.log(obj);
+                    // console.log(obj);
                     var html = template('navearaTpl', obj);
                     $('.nav-content ul').html(html);
                 }
@@ -68,6 +68,8 @@ $(function () {
 
         } else if ($(this).hasClass('eara')) {
             text = text.substr(0, 2);
+            console.log(text);
+            
             $('.nav-title ul .eara span').html(text);
             earaId = $(this).data('id');
             $(this).find('i').addClass('fa-check');
@@ -99,7 +101,7 @@ $(function () {
                 areaid: earaId,
             },
             success: function (obj) {
-                console.log(obj);
+                // console.log(obj);
                 //调用模板
                 var html = template('prodtcuTpl', obj);
                 $('.product-list .product-ul').html(html);

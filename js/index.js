@@ -1,4 +1,10 @@
 $(function(){
+    // 轮播图初始化
+    var gallery = mui('.mui-slider');
+    gallery.slider({
+    interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    // nav
     $.ajax({
         url:"http://localhost:9090/api/getindexmenu",
         datatype:"json",
@@ -39,6 +45,8 @@ $(function(){
         datatype:"json",
         success:function(obj){
             console.log(obj);
+            var html = template("reco",obj);
+            $(".discount").html(html);
             
         }
     })

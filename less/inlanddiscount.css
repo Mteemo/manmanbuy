@@ -47,8 +47,6 @@ html {
 #header .center {
   flex: 1;
   color: #fff;
-  line-height: .45rem;
-  text-align: center;
 }
 #header .right {
   width: .5rem;
@@ -57,7 +55,6 @@ html {
   display: block;
   height: 100%;
   padding: 0 .1rem;
-  line-height: .45rem;
 }
 #header .right a img {
   width: 100%;
@@ -103,9 +100,6 @@ html {
 #footer .enter ul li:nth-child(3) {
   flex: 1;
 }
-#footer .enter ul li i {
-  color: #747474;
-}
 #footer .enter ul li a {
   font-size: .13rem;
   color: #747474;
@@ -127,4 +121,27 @@ html {
 }
 #footer .download p:nth-child(1) span {
   color: #9d9d9d;
+}
+body {
+  font-size: .12rem;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.list li {
+  width: 50%;
+  height: 2.9rem;
+  padding: .1rem;
+  border-bottom: .01rem solid #cccccc;
+}
+.list li:nth-of-type(odd) {
+  border-right: .01rem solid #cccccc;
+}
+.list li img {
+  width: 100%;
+}
+.list li .text-2 {
+  color: #ff9d55;
 }
