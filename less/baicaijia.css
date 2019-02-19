@@ -15,48 +15,51 @@ a {
 html {
   font-size: 26.66667vw;
 }
-.header {
+#header {
   display: flex;
   height: .45rem;
-  line-height: 45px;
+  line-height: .45rem;
   background-color: #ff841d;
   text-align: center;
 }
-.header .left {
+#header .left {
   width: .5rem;
 }
-.header .left a {
+#header .left a {
   display: block;
   line-height: .45rem;
   padding: 0 .1rem;
 }
-.header .left a::before {
+#header .left a::before {
   font-size: .3rem;
   color: #fff;
 }
-.header .left-img {
+#header .left-img {
   width: 2rem;
   padding: 0 .1rem;
 }
-.header .left-img a {
+#header .left-img a {
   display: block;
 }
-.header .left-img a img {
+#header .left-img a img {
   width: 100%;
 }
-.header .center {
+#header .center {
   flex: 1;
   color: #fff;
+  line-height: .45rem;
+  text-align: center;
 }
-.header .right {
+#header .right {
   width: .5rem;
 }
-.header .right a {
+#header .right a {
   display: block;
   height: 100%;
   padding: 0 .1rem;
+  line-height: .45rem;
 }
-.header .right a img {
+#header .right a img {
   width: 100%;
 }
 #footer {
@@ -99,6 +102,9 @@ html {
 }
 #footer .enter ul li:nth-child(3) {
   flex: 1;
+}
+#footer .enter ul li i {
+  color: #747474;
 }
 #footer .enter ul li a {
   font-size: .13rem;
@@ -153,6 +159,8 @@ body {
   float: left;
   padding: .10rem .15rem;
   font-size: .15rem;
+  height: 0.43rem;
+  line-height: 0.23rem;
 }
 #nav .scroll-nav .mui-scroll .nav-category li.active {
   border-bottom: 2px solid red;
@@ -210,7 +218,7 @@ body {
 #main .mui-scroll-wrapper .mui-scroll .goods-view li > div img {
   width: 1.4rem;
   height: 1.4rem;
-  margin-right: .2rem;
+  margin-right: .1rem;
 }
 #main .mui-scroll-wrapper .mui-scroll .goods-view li > div .mui-media-body {
   flex: 1;
