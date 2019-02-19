@@ -11,11 +11,16 @@ $(function(){
         if (r != null) return decodeURI(r[2]);
         return null;
     }
+
     var id = getQueryString('categoryid');
     var category = getQueryString('category');
+
     $('.categoryName').html(' ' + category);
+
     var page = 1;
+
     queryList();
+    
     function queryList(){
         $.ajax({
             url:'http://localhost:9090/api/getproductlist',
@@ -23,6 +28,12 @@ $(function(){
             data:{
                 categoryid:id,
                 pageid : page
+            },
+            beforeSend: function () {
+                $('body').addClass('loadding')
+            },
+            complete: function () {
+                $('body').removeClass('loadding')
             },
             success:function(obj){
                 obj = JSON.parse(obj);

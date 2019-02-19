@@ -11,6 +11,12 @@ $(function () {
 
     $.ajax({
         url: 'http://localhost:9090/api/getcategorytitle',
+        beforeSend: function () {
+            $('body').addClass('loadding')
+        },
+        complete: function () {
+            $('body').removeClass('loadding')
+        },
         success: function (obj) {
             console.log(obj);
             var html = template('listTemp', {

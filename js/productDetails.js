@@ -51,6 +51,12 @@ $(function () {
             data:{
                 productid:productId
             },
+            beforeSend: function () {
+                $('body').addClass('loadding')
+            },
+            complete: function () {
+                $('body').removeClass('loadding')
+            },
             success:function(obj){
                 obj = JSON.parse(obj);
                 // console.log(obj);
@@ -67,6 +73,12 @@ $(function () {
             dataType: 'post',
             data:{
                 productid:productId
+            },
+            beforeSend: function () {
+                $('body').addClass('loadding')
+            },
+            complete: function () {
+                $('body').removeClass('loadding')
             },
             success:function(obj){
                 obj = JSON.parse(obj);
