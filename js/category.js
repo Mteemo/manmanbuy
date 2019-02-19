@@ -2,7 +2,7 @@ $(function () {
     window.addEventListener('load', function () {
         new FastClick(document.body);
     }, false);
-    
+
     var that;
 
     $('.btn-top').on('tap', function () {

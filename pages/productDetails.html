@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品详情</title>
-    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
-    <link rel="stylesheet/less" href="./less/productDetails.less">
-    <script src="./lib/less/less.js"></script>
-    <script src="./lib/zepto/zepto.min.js"></script>
-    <script src="./lib/mui/js/mui.min.js"></script>
-    <script src="./lib/artTemplate/template-web.js"></script>
-    <script src="./lib/fastclick.js"></script>
-    <script src="./js/productDetails.js"></script>
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="../less/productDetails.less">
+    <script src="../lib/less/less.js"></script>
+    <script src="../lib/zepto/zepto.min.js"></script>
+    <script src="../lib/mui/js/mui.min.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="../js/productDetails.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="left-img">
             <a href="#">
-                <img src="./images/header_logo.png" alt="">
+                <img src="../images/header_logo.png" alt="">
             </a>
         </div>
         <div class="center">
@@ -29,7 +29,7 @@
         </div>
         <div class="right">
             <a href="#">
-                <img src="./images/header_app.png" alt="">
+                <img src="../images/header_app.png" alt="">
             </a>
         </div>
     </header>
@@ -42,8 +42,8 @@
                 <div class="detailsInfo">
                     <section class="details-img">
                         <p>奥克斯(AUX) KFR-25GW/FK01+3 1匹 挂壁式定速冷暖空调</p>
-                        <img src="./images/Thumb_2014120015214690353.jpg" alt="">
-                        <img src="./images/sc.jpg" alt="">
+                        <img src="../images/Thumb_2014120015214690353.jpg" alt="">
+                        <img src="../images/sc.jpg" alt="">
                     </section>
                     <section class="nav-details">
                         <div>比价购买</div>
@@ -99,13 +99,13 @@
         <div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a>
             <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html"
                 class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a>
-            <a href="index.html" class="menuItem"></a></div>
+            <a href="../index.html" class="menuItem"></a></div>
             <!-- <a href="##" class="center1"></a> -->
     </div>
     
     <script type="text/html" id="cateTemp">
         <div class="nav-tittle">
-            <a href="index.html">首页 ></a>
+            <a href="../index.html">首页 ></a>
             <a href="category.html">全部分类 ></a>
             <a href="productList.html?categoryid={{categoryId}}&category={{category}}" class="categoryName"> {{category}}</a>
         </div>
@@ -116,7 +116,7 @@
         <section class="details-img">
             <p>{{productName}}</p>
             {{@productImg}}
-            <img src="./images/sc.jpg" alt="">
+            <img src="../images/sc.jpg" alt="">
         </section>
         <section class="nav-details">
             <div>比价购买</div>
@@ -137,11 +137,11 @@
             </div>
             <div class="star">
                 <div class="starImg">
-                    <img src="./images/star.svg" alt="">
-                    <img src="./images/star.svg" alt="">
-                    <img src="./images/star.svg" alt="">
-                    <img src="./images/star.svg" alt="">
-                    <img src="./images/star.svg" alt="">
+                    <img src="../images/star.svg" alt="">
+                    <img src="../images/star.svg" alt="">
+                    <img src="../images/star.svg" alt="">
+                    <img src="../images/star.svg" alt="">
+                    <img src="../images/star.svg" alt="">
                 </div>
                 <div class="taobao">
                     {{value.comFrom}}
@@ -152,5 +152,5 @@
         {{/each}}
     </script>
 </body>
-<script src="./js/common.js"></script>
+<script src="../js/common.js"></script>
 </html>
