@@ -169,6 +169,9 @@ a {
   margin-left: .1rem;
   background-color: #ff841d;
 }
+.mui-scroll-wrapper {
+  padding-top: 1rem;
+}
 #main {
   background-color: #fff;
 }
