@@ -7,6 +7,7 @@ img {
 }
 li {
     list-style: none;
+
 }
 a {
     text-decoration: none;
@@ -18,10 +19,10 @@ html {
 
 
 // 头部css
-.header {
+#header {
     display: flex;
     height: .45rem;
-    line-height: 45px;
+    line-height: .45rem;
     background-color: #ff841d;
     text-align: center;
    .left {
@@ -49,6 +50,8 @@ html {
    .center {
        flex: 1;
        color: #fff;
+       line-height: .45rem;
+       text-align: center;
    }
    .right {
        width: .5rem;
@@ -56,6 +59,7 @@ html {
            display: block;
            height: 100%;
            padding: 0 .1rem;
+           line-height: .45rem;
            img {
                width: 100%;
            }
@@ -101,6 +105,9 @@ html {
                 }
                   &:nth-child(3){
                       flex: 1;
+                  }
+                  i{
+                      color:#747474;
                   }
                   a{
                       font-size: .13rem;

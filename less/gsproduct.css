@@ -18,7 +18,7 @@ html {
 #header {
   display: flex;
   height: .45rem;
-  line-height: .45rem;
+  line-height: 45px;
   background-color: #ff841d;
   text-align: center;
 }
@@ -103,9 +103,6 @@ html {
 #footer .enter ul li:nth-child(3) {
   flex: 1;
 }
-#footer .enter ul li i {
-  color: #747474;
-}
 #footer .enter ul li a {
   font-size: .13rem;
   color: #747474;
@@ -127,4 +124,86 @@ html {
 }
 #footer .download p:nth-child(1) span {
   color: #9d9d9d;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.main .nav {
+  background-color: #fff;
+}
+.main .nav .nav-title {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.main .nav .nav-title .nav-list {
+  flex: 1;
+  height: .3rem;
+  line-height: .3rem;
+  text-align: center;
+}
+.main .nav .nav-title .nav-list .nav-ul {
+  display: flex;
+}
+.main .nav .nav-title .nav-list .nav-ul li {
+  flex: 1;
+  font-size: .14rem;
+}
+.main .nav .nav-title .nav-list .nav-ul li i {
+  padding-left: .03rem;
+}
+.main .nav .nav-title .search {
+  border-left: 1px solid #ccc;
+  width: .5rem;
+  line-height: .3rem;
+  text-align: center;
+}
+.main .nav .nav-title .search .fa-search {
+  font-size: .2rem;
+}
+.main .nav .nav-content ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .2rem;
+  height: .3rem;
+  line-height: .3rem;
+  border-bottom: 1px solid #ccc;
+  font-size: .14rem;
+}
+.main .nav .nav-content ul li .font {
+  line-height: .3rem;
+  color: red;
+}
+.main .product-list .product-ul {
+  padding: .2rem 0;
+}
+.main .product-list .product-ul li {
+  box-sizing: border-box;
+  margin-bottom: .05rem;
+}
+.main .product-list .product-ul li a {
+  background-color: #fff;
+  margin: 0 .1rem;
+  display: block;
+  border: 1px solid #ccc;
+  padding: 0 .1rem .05rem;
+}
+.main .product-list .product-ul li a img {
+  width: 100%;
+}
+.main .product-list .product-ul li a .price {
+  color: red;
+  font-size: 15px;
+}
+.main .product-list .product-ul li a button {
+  width: 100%;
 }

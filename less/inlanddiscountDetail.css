@@ -47,8 +47,6 @@ html {
 #header .center {
   flex: 1;
   color: #fff;
-  line-height: .45rem;
-  text-align: center;
 }
 #header .right {
   width: .5rem;
@@ -57,7 +55,6 @@ html {
   display: block;
   height: 100%;
   padding: 0 .1rem;
-  line-height: .45rem;
 }
 #header .right a img {
   width: 100%;
@@ -127,4 +124,89 @@ html {
 }
 #footer .download p:nth-child(1) span {
   color: #9d9d9d;
+}
+#main {
+  background-color: #fff;
+  padding: .1rem;
+  padding-bottom: .3rem;
+}
+#main div {
+  color: #4d4c4a;
+  font-size: .19rem;
+  padding-top: .15rem;
+  padding: .1rem;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+#main ul {
+  padding: .1rem;
+  width: 2.3rem;
+}
+#main ul li {
+  word-wrap: break-word;
+  word-break: normal;
+}
+#main ul li:nth-child(1) {
+  color: #ff6f25;
+  font-weight: bold;
+}
+#main ul li:nth-child(2) {
+  color: #b2b1bc;
+  font-size: .12rem;
+  line-height: .5rem;
+  white-space: nowrap;
+}
+#main ul li:nth-child(3) {
+  color: #606060;
+  font-size: .14rem;
+}
+#main ul li img {
+  width: 100%;
+}
+#main .buy {
+  width: 100%;
+  background-color: #ff9000;
+  border-radius: .05rem;
+  color: #fff;
+  text-align: center;
+  height: .35rem;
+  line-height: .35rem;
+}
+#main .img {
+  margin-top: .3rem;
+}
+#main .img img {
+  width: 100%;
+}
+#main .discuss p {
+  margin: 0;
+  line-height: .3rem;
+}
+#main .discuss .box input {
+  height: .8rem;
+  margin: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+#main .discuss .box .bottom-box {
+  padding: 0;
+  width: 100%;
+  position: relative;
+  border: .01rem solid #dfdfdf;
+}
+#main .discuss .box .bottom-box #btn {
+  position: absolute;
+  right: 0;
+  width: .8rem;
+  height: .3rem;
+  font-size: .14rem;
+  border: 0;
+  background-color: #ff841d;
+  color: #fff;
+  text-align: center;
+  line-height: .3rem;
+  font-weight: 400;
+}
+#main .discuss .newest {
+  margin-top: .3rem;
 }

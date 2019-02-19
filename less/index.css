@@ -15,48 +15,48 @@ a {
 html {
   font-size: 26.66667vw;
 }
-.header {
+#header {
   display: flex;
   height: .45rem;
-  line-height: 45px;
+  line-height: .45rem;
   background-color: #ff841d;
   text-align: center;
 }
-.header .left {
+#header .left {
   width: .5rem;
 }
-.header .left a {
+#header .left a {
   display: block;
   line-height: .45rem;
   padding: 0 .1rem;
 }
-.header .left a::before {
+#header .left a::before {
   font-size: .3rem;
   color: #fff;
 }
-.header .left-img {
+#header .left-img {
   width: 2rem;
   padding: 0 .1rem;
 }
-.header .left-img a {
+#header .left-img a {
   display: block;
 }
-.header .left-img a img {
+#header .left-img a img {
   width: 100%;
 }
-.header .center {
+#header .center {
   flex: 1;
   color: #fff;
 }
-.header .right {
+#header .right {
   width: .5rem;
 }
-.header .right a {
+#header .right a {
   display: block;
   height: 100%;
   padding: 0 .1rem;
 }
-.header .right a img {
+#header .right a img {
   width: 100%;
 }
 #footer {
@@ -99,6 +99,9 @@ html {
 }
 #footer .enter ul li:nth-child(3) {
   flex: 1;
+}
+#footer .enter ul li i {
+  color: #747474;
 }
 #footer .enter ul li a {
   font-size: .13rem;
@@ -149,6 +152,12 @@ html {
 #main {
   background-color: #f1f1f1;
 }
+#main .slider a {
+  display: block;
+}
+#main .slider a img {
+  width: 100%;
+}
 #main .nav {
   margin-top: .1rem;
   margin-bottom: .07rem;
@@ -180,21 +189,40 @@ html {
 #main .nav ul li a img {
   width: 50%;
 }
-.recommend {
+#main .recommend {
   background-color: #ff9711;
   display: flex;
   line-height: .35rem;
   justify-content: space-between;
 }
-.recommend p {
+#main .recommend p {
   margin: 0;
   font-size: .14rem;
   color: #fff;
   padding-left: .1rem;
 }
-.recommend span {
+#main .recommend span {
   line-height: .35rem;
   color: #fff;
   padding-right: .1rem;
   font-size: .14rem;
+}
+#main .discount {
+  background-color: #fff;
+}
+#main .discount .recommend-ations {
+  padding: .25rem;
+}
+#main .discount .recommend-ations img {
+  width: .7rem;
+  height: .63rem;
+}
+#main .discount .recommend-ations .text {
+  margin-top: .1rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: .3rem;
+}
+#main .discount .recommend-ations .text p:nth-child(2) {
+  line-height: .3rem;
 }
