@@ -1,33 +1,24 @@
-$(function(){
-    // 页面首页 请求
-    var id = 0
-    $.ajax({
-        url:"http://localhost:9090/api/getinlanddiscount",
-        success:function(obj){
-            console.log(obj);
-           id = obj.result[0]._id
-            console.log(id);
-            
-            var html = template("discountlist",obj);
-            $(".list").html(html);
-        }
-    });
+$(function (){
     
 
-    // 详情 请求
-    $(".list").on("tap","li",function(){
-        var id = $(this).data("id");
-        location="inlanddiscountDetail.html?id="+id
-
     $.ajax({
-        url:"http://localhost:9090/api/getdiscountproduct",
-        data:{
-            productid:id
-        },
+        url:'http://localhost:9090/api/getinlanddiscount',
         success:function(obj){
             console.log(obj);
+            var html = template('list',{list:obj.result});
+            $('.discount-list').html(html);
+            mui('.mui-scroll-wrapper').scroll({
+                deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            });$
         }
     })
-    
-    })
+    $('.discount-list').on('tap','.inland-discount-list' ,function () { 
+        var id = $(this).data('id');
+        console.log(id);
+        location='discount-product.html?id='+id;
+
+     })
+
+
+
 })
